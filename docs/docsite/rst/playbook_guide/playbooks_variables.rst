@@ -427,13 +427,13 @@ Ansible does apply variable precedence, and you might have a use for it. Here is
   #. role defaults (as defined in :ref:`Role directory structure <role_directory_structure>`) [1]_
   #. variables for group "all" defined inside of an inventory file or script [2]_
   #. other group vars defined inside of an inventory file or script [2]_
-  #. inventory group_vars/all (a file in the directory group_vars/ adjacent to the inventory) [3]_
-  #. playbook group_vars/all (a file in the directory group_vars/ adjacent to the playbook) [3]_
-  #. inventory group_vars/* (a file in the directory group_vars/ adjacent to the inventory) [3]_
-  #. playbook group_vars/* (a file in the directory group_vars/ adjacent to the playbook) [3]_
+  #. inventory ``group_vars/all`` (a file in the ``group_vars/`` directory that is adjacent to the inventory) [3]_
+  #. playbook ``group_vars/all`` (a file in the ``group_vars/`` directory that is adjacent to the playbook) [3]_
+  #. inventory ``group_vars/*`` (a file in the ``group_vars/`` directory that is adjacent to the inventory) [3]_
+  #. playbook ``group_vars/*`` (a file in the ``group_vars/`` directory that is adjacent to the playbook) [3]_
   #. host vars defined in an inventory file or script [2]_
-  #. inventory host_vars/* (a file in the directory host_vars/ adjacent to the inventory) [3]_
-  #. playbook host_vars/* (a file in the directory host_vars/ adjacent to the inventory) [3]_
+  #. inventory ``host_vars/*`` (a file in the ``host_vars/`` directory that is adjacent to the inventory) [3]_
+  #. playbook ``host_vars/*`` (a file in the ``host_vars/`` directory that is adjacent to the inventory) [3]_
   #. host facts / cached set_facts [4]_
   #. play vars (defined in the section vars for the play)
   #. play vars_prompt
